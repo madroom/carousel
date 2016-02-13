@@ -1,5 +1,5 @@
 //
-//  IntroViewController.swift
+//  LoginViewController.swift
 //  carousel1
 //
 //  Created by Madelyn Lee on 2/13/16.
@@ -8,18 +8,12 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class LoginViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        scrollView.contentSize = CGSize(width: 320, height: 1136)
-        scrollView.frame.size = CGSize(width: 320, height: 568)
-
-        
     }
 
     override func didReceiveMemoryWarning() {

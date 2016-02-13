@@ -15,6 +15,7 @@
 		1DF459171C6FE9C000F8AEED /* carousel1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF459161C6FE9C000F8AEED /* carousel1Tests.swift */; };
 		1DF459221C6FE9C000F8AEED /* carousel1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF459211C6FE9C000F8AEED /* carousel1UITests.swift */; };
 		1DF459301C6FEA2300F8AEED /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4592F1C6FEA2300F8AEED /* IntroViewController.swift */; };
+		1DF459321C6FED4100F8AEED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF459311C6FED4100F8AEED /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1DF459211C6FE9C000F8AEED /* carousel1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carousel1UITests.swift; sourceTree = "<group>"; };
 		1DF459231C6FE9C000F8AEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF4592F1C6FEA2300F8AEED /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		1DF459311C6FED4100F8AEED /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				1DF459011C6FE9C000F8AEED /* AppDelegate.swift */,
 				1DF459031C6FE9C000F8AEED /* ViewController.swift */,
 				1DF459051C6FE9C000F8AEED /* Main.storyboard */,
+				1DF459311C6FED4100F8AEED /* LoginViewController.swift */,
 				1DF4592F1C6FEA2300F8AEED /* IntroViewController.swift */,
 				1DF459081C6FE9C000F8AEED /* Assets.xcassets */,
 				1DF4590A1C6FE9C000F8AEED /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF459321C6FED4100F8AEED /* LoginViewController.swift in Sources */,
 				1DF459301C6FEA2300F8AEED /* IntroViewController.swift in Sources */,
 				1DF459041C6FE9C000F8AEED /* ViewController.swift in Sources */,
 				1DF459021C6FE9C000F8AEED /* AppDelegate.swift in Sources */,
