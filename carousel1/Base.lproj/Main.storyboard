@@ -195,35 +195,78 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" id="neO-4X-2iC" userLabel="buttonView">
+                                        <rect key="frame" x="954" y="445" width="326" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="aTA-Am-DyI">
+                                                <rect key="frame" x="3" y="16" width="320" height="97"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="94d-vq-gKZ" userLabel="Spin">
+                                                <rect key="frame" x="20" y="33" width="285" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="ayP-eh-fKW" kind="modal" modalTransitionStyle="crossDissolve" id="tYq-5I-ue2"/>
+                                                </connections>
+                                            </button>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="XrO-Yf-BwG">
+                                                <rect key="frame" x="256" y="16" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="aTA-Am-DyI">
-                                <rect key="frame" x="960" y="452" width="320" height="97"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="iT7-qV-CNa">
                                 <rect key="frame" x="141" y="523" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" red="0.89273151178010468" green="0.87413652991910051" blue="0.88755097829236518" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.13718041049757279" green="0.47056091688641299" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="94d-vq-gKZ" userLabel="Spin">
-                                <rect key="frame" x="975" y="486" width="285" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="backupButtonImage" destination="aTA-Am-DyI" id="AAO-wo-eM7"/>
+                        <outlet property="backupSwitch" destination="XrO-Yf-BwG" id="DPd-Is-7t1"/>
+                        <outlet property="buttonView" destination="neO-4X-2iC" id="3Kb-bV-gIL"/>
                         <outlet property="pageControl" destination="iT7-qV-CNa" id="8bS-r3-m85"/>
+                        <outlet property="proceedButton" destination="94d-vq-gKZ" id="1NJ-si-fhm"/>
                         <outlet property="scrollView" destination="VW4-45-5hv" id="HuL-sc-lxp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mV-1H-Zml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="2241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aZt-rF-vzf">
+            <objects>
+                <viewController id="ocL-jV-dUb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H5c-jg-GlM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed_nav" id="Ofn-cp-5SM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed" id="JJH-TZ-0AX">
+                                <rect key="frame" x="0.0" y="63" width="320" height="1564"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WuQ-2Z-9UZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dl4-sr-qA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233" y="2241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Kg-Fy-71k">
@@ -243,9 +286,29 @@
             </objects>
             <point key="canvasLocation" x="162" y="396"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QxD-n1-KOA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ayP-eh-fKW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OkI-Xp-qjP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ocL-jV-dUb" kind="relationship" relationship="rootViewController" id="e4Q-DN-cx1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdQ-av-xbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="2241"/>
+        </scene>
     </scenes>
     <resources>
         <image name="backup_button" width="320" height="97"/>
+        <image name="feed" width="320" height="1564"/>
+        <image name="feed_nav" width="320" height="65"/>
         <image name="intro" width="320" height="1136"/>
         <image name="intro_tile1" width="153" height="152"/>
         <image name="intro_tile2" width="76" height="75"/>

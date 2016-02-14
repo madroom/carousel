@@ -12,8 +12,12 @@ class storyboardViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var backupButtonImage: UIImageView!
+    @IBOutlet weak var backupSwitch: UISwitch!
+    @IBOutlet weak var proceedButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +25,8 @@ class storyboardViewController: UIViewController, UIScrollViewDelegate {
 
         scrollView.contentSize = CGSize(width: 1280, height: 568)
         scrollView.frame.size = CGSize(width: 320, height: 568)
-
+//        buttonView.alpha = 1
+        
         
         // Do any additional setup after loading the view.
     }
@@ -38,6 +43,10 @@ class storyboardViewController: UIViewController, UIScrollViewDelegate {
         
         // Set the current page, so the dots will update
         pageControl.currentPage = page
+        
+        if page == 3 {
+            pageControl.hidden = true
+     }
     }
     
 
