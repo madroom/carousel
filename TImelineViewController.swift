@@ -1,26 +1,24 @@
 //
-//  IntroViewController.swift
+//  TImelineViewController.swift
 //  carousel1
 //
-//  Created by Madelyn Lee on 2/13/16.
+//  Created by Madelyn Lee on 2/14/16.
 //  Copyright © 2016 Madelyn Lee. All rights reserved.
 //
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class TImelineViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: 320, height: 1592)
+        scrollView.frame.size = CGSize(width: 320, height: 493)
 
         // Do any additional setup after loading the view.
-        
-        scrollView.contentSize = CGSize(width: 320, height: 1136)
-        scrollView.frame.size = CGSize(width: 320, height: 568)
-
-        
     }
 
     override func didReceiveMemoryWarning() {

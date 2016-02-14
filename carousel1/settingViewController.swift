@@ -1,26 +1,25 @@
 //
-//  IntroViewController.swift
+//  settingViewController.swift
 //  carousel1
 //
-//  Created by Madelyn Lee on 2/13/16.
+//  Created by Madelyn Lee on 2/14/16.
 //  Copyright © 2016 Madelyn Lee. All rights reserved.
 //
 
 import UIKit
 
-class IntroViewController: UIViewController {
-
-    @IBOutlet weak var scrollView: UIScrollView!
+class settingViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: 320, height: 695)
+        
+        scrollView.frame.size = CGSize(width: 320, height: 504)
 
         // Do any additional setup after loading the view.
-        
-        scrollView.contentSize = CGSize(width: 320, height: 1136)
-        scrollView.frame.size = CGSize(width: 320, height: 568)
-
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,4 +38,7 @@ class IntroViewController: UIViewController {
     }
     */
 
+    @IBAction func backDidTap(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
