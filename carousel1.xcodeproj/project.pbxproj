@@ -20,6 +20,8 @@
 		1DF459361C70F54C00F8AEED /* TImelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF459351C70F54C00F8AEED /* TImelineViewController.swift */; };
 		1DF459381C70F62500F8AEED /* conversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF459371C70F62500F8AEED /* conversationViewController.swift */; };
 		1DF4593A1C70FB4F00F8AEED /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF459391C70FB4F00F8AEED /* settingViewController.swift */; };
+		1DF4593C1C71049B00F8AEED /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4593B1C71049B00F8AEED /* createViewController.swift */; };
+		1DF4593E1C71950300F8AEED /* termsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4593D1C71950300F8AEED /* termsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		1DF459351C70F54C00F8AEED /* TImelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TImelineViewController.swift; sourceTree = "<group>"; };
 		1DF459371C70F62500F8AEED /* conversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversationViewController.swift; sourceTree = "<group>"; };
 		1DF459391C70FB4F00F8AEED /* settingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		1DF4593B1C71049B00F8AEED /* createViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
+		1DF4593D1C71950300F8AEED /* termsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = termsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				1DF459011C6FE9C000F8AEED /* AppDelegate.swift */,
 				1DF459031C6FE9C000F8AEED /* ViewController.swift */,
 				1DF459051C6FE9C000F8AEED /* Main.storyboard */,
+				1DF4593D1C71950300F8AEED /* termsViewController.swift */,
+				1DF4593B1C71049B00F8AEED /* createViewController.swift */,
 				1DF459391C70FB4F00F8AEED /* settingViewController.swift */,
 				1DF459371C70F62500F8AEED /* conversationViewController.swift */,
 				1DF459331C703C2500F8AEED /* storyboardViewController.swift */,
@@ -275,10 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF4593E1C71950300F8AEED /* termsViewController.swift in Sources */,
 				1DF459321C6FED4100F8AEED /* LoginViewController.swift in Sources */,
 				1DF459301C6FEA2300F8AEED /* IntroViewController.swift in Sources */,
 				1DF459341C703C2500F8AEED /* storyboardViewController.swift in Sources */,
 				1DF4593A1C70FB4F00F8AEED /* settingViewController.swift in Sources */,
+				1DF4593C1C71049B00F8AEED /* createViewController.swift in Sources */,
 				1DF459361C70F54C00F8AEED /* TImelineViewController.swift in Sources */,
 				1DF459041C6FE9C000F8AEED /* ViewController.swift in Sources */,
 				1DF459381C70F62500F8AEED /* conversationViewController.swift in Sources */,

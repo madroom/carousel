@@ -27,6 +27,34 @@ class settingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+//    
+//    
+//    @IBAction func didPressSignout (sender: AnyObject) {
+// 
+//                let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+//                
+//                let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+//                }
+//                
+//                alertController.addAction(OKAction)
+//                
+//                self.presentViewController(alertController, animated: true, completion: nil)
+//        
+//        }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation
@@ -39,6 +67,33 @@ class settingViewController: UIViewController {
     */
 
     @IBAction func backDidTap(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        
+
+        let alertController = UIAlertController(title: "", message: "Are you sure you want to sign out?", preferredStyle: .ActionSheet)
+        
+        let logoutAction = UIAlertAction(title: "Sign Out", style: .Destructive) { (action) in
+            
+              self.performSegueWithIdentifier("signoutSegue", sender: self)
+            
+            
+//             self.dismissViewControllerAnimated(true, completion: nil)
+            
+            // handle case of user logging out
+        }
+        // add the logout action to the alert controller
+        alertController.addAction(logoutAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            // handle case of user canceling. Doing nothing will dismiss the view.
+        }
+        // add the cancel action to the alert controller
+        alertController.addAction(cancelAction)
+        
+        presentViewController(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+        }
+
+        
+//        dismissViewControllerAnimated(true, completion: nil)
     }
 }

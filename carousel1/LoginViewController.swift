@@ -22,6 +22,12 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var loginNavBar: UIImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
+    
+    
+    
+    
+    
+    
     var initialY: CGFloat!
     var offset: CGFloat!
     
@@ -159,30 +165,41 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         loadingIndicator.startAnimating()
         loginButton.selected = true
         
+        
+        if emailField.text!.isEmpty || passwordField.text!.isEmpty {
+            
+            
+            delay(2, closure: { () -> () in
+                self.loadingIndicator.stopAnimating()
+                self.loginButton.selected = false
+                
+                
+                let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+                
+                let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                }
+                
+                alertController.addAction(OKAction)
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+            })
+
+            
+            
+        }
+        
+        
         if emailField.text == "mad" && passwordField.text == "pw" {
             delay(2, closure: { () -> () in
                 self.loadingIndicator.stopAnimating()
                 self.loginButton.selected = false
+                
+                self.performSegueWithIdentifier("signinSegue", sender: self)
+                
+                
             })
             
-            
-//        if emailField.text!.isEmpty {
-//                delay(2, closure: { () -> () in
-//                    self.loadingIndicator.stopAnimating()
-//                    self.loginButton.selected = false
-//                   
-//                    let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
-//                    
-//                    let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-//                    }
-//                    
-//                    alertController.addAction(OKAction)
-//                    
-//                    self.presentViewController(alertController, animated: true, completion: nil)
-//                })
-//            }
-
-       
+ 
             
         } else {
             
@@ -191,7 +208,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                 self.loginButton.selected = false
                 
                 
-                let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+                let alertController = UIAlertController(title: "Wrong Password", message: "Please try again", preferredStyle: .Alert)
                 
                 let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
                 }
