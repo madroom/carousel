@@ -7,4 +7,4 @@ Challenges: Tiles translate/ animation is the hardest one for this assignment. I
 
 Learning: Getting more familiar with basic tools such as scrollview, button, segue, dismiss etc.
 
-![demo gif] (Dropbox.gif)
+![demo gif] (Carousel.gif)
